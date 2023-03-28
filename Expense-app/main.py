@@ -17,9 +17,12 @@ def home():
 
 @app.route('/login_validation', methods=['POST'])
 def login_validation():
+    email= request.form.get('email')
+    password= request.form.get('password')
+    return "The email is {} and the password is {}".format(email, password)
     return '....'
 
-
+# DATABASE QUERY PENDING { 30:00 MIN LEFT IN FLASK}
 
 if __name__ == "__main__":
     app.run(debug=True)
