@@ -2,7 +2,6 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-
 @app.route('/')
 def login():
     return render_template('login.html')
@@ -20,7 +19,7 @@ def login_validation():
     email= request.form.get('email')
     password= request.form.get('password')
     return "The email is {} and the password is {}".format(email, password)
-    return '....'
+
 
 # DATABASE QUERY PENDING { 30:00 MIN LEFT IN FLASK}
 
