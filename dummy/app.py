@@ -7,6 +7,7 @@ from PIL import Image
 
 app = Flask(__name__)
 
+#flask 
 
 @app.route('/predict', methods=['POST'])
 def apicall():
